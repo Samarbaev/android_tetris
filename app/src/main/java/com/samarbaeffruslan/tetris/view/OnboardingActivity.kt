@@ -18,7 +18,9 @@ class OnboardingActivity : BaseActivity(R.layout.activity_onboarding) {
         R.id.onboardingContainer
     )
 
-    private val appPrefs = AppPreferences(this)
+    private val appPrefs by lazy {
+        AppPreferences(this)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
