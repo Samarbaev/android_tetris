@@ -5,7 +5,11 @@ plugins {
 
 android {
     namespace = "com.samarbaeffruslan.tetris"
-    compileSdk = 34
+    compileSdk = 35
+
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.samarbaeffruslan.tetris"
@@ -42,6 +46,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    implementation("com.github.kirich1409:viewbindingpropertydelegate-full:1.5.9")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
