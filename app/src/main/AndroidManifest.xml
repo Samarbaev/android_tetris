@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Tetris"
         tools:targetApi="31">
         <activity
-            android:name=".view.OnboardingActivity"
+            android:name="com.mydomain.tetris.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".view.GameActivity"
+            android:name="com.mydomain.tetris.GameActivity"
             android:exported="false">
 
         </activity>

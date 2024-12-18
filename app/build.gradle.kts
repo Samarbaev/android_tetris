@@ -7,10 +7,6 @@ android {
     namespace = "com.samarbaeffruslan.tetris"
     compileSdk = 35
 
-    buildFeatures {
-        viewBinding = true
-    }
-
     defaultConfig {
         applicationId = "com.samarbaeffruslan.tetris"
         minSdk = 24
